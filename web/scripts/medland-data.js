@@ -1,7 +1,7 @@
 namespace("medland-cooks.MedlandData", {
   "gizmo-atheneum.namespaces.Ajax":"Ajax"
 }, ({ Ajax }) => {
-  const getImageUrl = (fileId) => `./resources/print-recipies/${fileId}.jpg`
+  const getImageUrl = (fileId) => `./recipe-photos/print/${fileId}.jpg`
   const callAjax = function(subPath, callback) {
     Ajax.get(`https://Medland-Cooks.github.io/${subPath}`,{
       success: (responseText) => {
